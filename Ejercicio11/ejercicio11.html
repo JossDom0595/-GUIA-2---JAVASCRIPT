@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicio11.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<form name="fdatos">
+    Ingrese el numero 1 <input type="text" size="10" name="num1"><br><br>
+    Ingrese el numero 2 <input type="text" size="10" name="num2"><br><br>
+    Ingrese el numero 3 <input type="text" size="10" name="num3">
+    <br><br>
+    <input type="button" value="Calcular numero mayor" onclick="identificaMayor(fdatos.num1.value,fdatos.num2.value,fdatos.num3.value)"/>
+    <input type="reset" value="Reset"/><br><br>
+
+    El numero mayor es: <span id="resultado"></span>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicio10.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<form name="fdatos"> 
+    Altura en cm (ejemplo: 155) <input type="text" size="10"  name="altura"/></br></br>
+    Peso en kg (ejemplo: 80) <input type="text" size="10"  name="peso"/></br></br> 
+    Edad (ejemplo: 45) <input type="text" size="10"  name="edad"/></br></br> 
+    Sexo (H-M-O)    <input type="text" size="10"  name="sexo"/></br></br> 
+
+    <input id="pideal" type="button" value="Calcula" onclick="pesoReferencia(fdatos.altura.value,fdatos.peso.value,fdatos.edad.value,fdatos.sexo.value)"/>
+    <input type="reset" value="Reset" /> 
+    </br></br> El peso aproximado de referencia es: <span id="resultado"></span> 
+</form>
+</body>
+</html>
